@@ -1,0 +1,183 @@
+/* Application-wide Styles */
+
+h1 {
+  clear: both;
+  color: rgb(171, 202, 57);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align: center;
+}
+
+h2,
+h3 {
+  clear: both;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body,
+input[text],
+button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+
+/* everywhere else */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  margin: 40px;
+  height: 100px;
+  background-color: #004C80;
+  position: relative;
+  overflow: hidden;
+}
+
+#main div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #FFF;
+}
+
+.top {
+  top: -10px;
+}
+
+.bottom {
+  bottom: -10px;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
+.tab a.active {
+  background-color: aqua;
+  color: black;
+}
+
+.tab a:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.tab a:hover:before {
+  webkit-box-shadow: 10px 0 0 0 #0ff;
+  box-shadow: 10px 0 0 0 #0ff;
+}
+
+.tab a:hover:after {
+  webkit-box-shadow: -10px 0 0 0 #0ff;
+  box-shadow: -10px 0 0 0 #0ff;
+}
+
+.tab a.active:before {
+  webkit-box-shadow: 10px 0 0 0 #0ff;
+  box-shadow: 10px 0 0 0 #0ff;
+}
+
+.tab a.active:after {
+  webkit-box-shadow: -10px 0 0 0 #0ff;
+  box-shadow: -10px 0 0 0 #0ff;
+}
+
+/*
+
+  .tab a.active:before, .tabs a.active:after {
+
+box-shadow: -10px 0 0 0 aqua;
+
+  z-index: 1;
+
+}
+
+*/
+
+.tab a {
+  float: left;
+  width: 10%;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  margin-left: 0px;
+  margin-bottom:10px;
+  background-color: #fff;
+  /*
+
+              -webkit-border-top-left-radius: 10px;
+
+              -webkit-border-top-right-radius: 10px;
+
+              -moz-border-radius-topleft: 10px;
+
+              -moz-border-radius-topright: 10px;
+
+*/
+  border-top-left-radius: 20% 90%;
+  border-top-right-radius: 20% 90%;
+}
+
+.tab:hover {
+  background-color: greenyellow;
+  /*        z-index: 1000;*/
+  /*        box-shadow: -10px 0 0 0 greenyellow;*/
+}
+
+.tab a:before,
+.tab a:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  bottom: 0;
+}
+
+.tab a:after {
+  right: -20px;
+  border-bottom-left-radius: 10px 100%;
+  /*           border-radius: 0 0 0 10px;*/
+  /*
+
+              -moz-border-radius: 0 0 0 10px;
+
+              -webkit-border-radius: 0 0 0 10px;
+
+*/
+  -webkit-box-shadow: -10px 0 0 0 #fff;
+  box-shadow: -10px 0 0 0 #fff;
+}
+
+.tab a:before {
+  left: -20px;
+  border-bottom-right-radius: 10px 100%;
+  /*           border-radius: 0 0 10px 0;*/
+  /*
+
+              -moz-border-radius: 0 0 10px 0;
+
+              -webkit-border-radius: 0 0 10px 0;
+
+*/
+  -webkit-box-shadow: 10px 0 0 0 #fff;
+  box-shadow: 10px 0 0 0 #fff;
+}
+body {
+  background: #d1491f;
+  padding: 50px;
+
+}
